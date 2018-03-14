@@ -5,11 +5,12 @@ import { createStore } from 'redux';
 import logo from './logo.svg';
 import './App.css';
 
+import rootReducer from './rootReducer';
+
 import MovieList from './MovieList';
 import MovieDetail from './MovieDetail';
 
-const greeting = () => ('Hello, World!');
-const store = createStore(greeting);
+const store = createStore(rootReducer);
 
 const App = () => (
   <Provider store={store} >
