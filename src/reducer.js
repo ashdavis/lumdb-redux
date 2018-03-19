@@ -7,7 +7,7 @@ export default function(state = initialState, action) {
 
   switch(type) {
     case 'TOGGLE_MESSAGE':
-      return state;
+      return {...state, messageVisible: !state.messageVisible};
     default:
       return state;
   }
