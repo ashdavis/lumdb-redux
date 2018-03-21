@@ -70,11 +70,12 @@ For more create-react-app commands, see the create-react-app [README](./docs/cre
 - [React 16](https://reactjs.org)
 - [Redux](https://redux.js.org/)
 - [React Redux](https://github.com/reactjs/react-redux)
+- [Redux DevTools Extension](https://github.com/zalmoxisus/redux-devtools-extension)
+- [Redux Logger](https://github.com/evgenyrodionov/redux-logger)
 - [React Router 4](https://reacttraining.com/react-router/)
 - [React Overdrive](https://github.com/berzniz/react-overdrive)
 - [Styled Components](https://www.styled-components.com/)
 - [The Movie DB API](https://www.themoviedb.org/documentation/api)
-- [Firebase](https://firebase.google.com/)
 
 
 ## Contributors
