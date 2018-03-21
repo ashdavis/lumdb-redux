@@ -11,9 +11,9 @@ import './App.css';
 
 import rootReducer from './rootReducer';
 
-import MovieList from './MovieList';
-import MovieDetail from './MovieDetail';
-import Toggle from './Toggle';
+import MovieList from './movies/MovieList';
+import MovieDetail from './movies/MovieDetail';
+import Toggle from './toggle/Toggle';
 
 const middleware = [logger, thunk];
 

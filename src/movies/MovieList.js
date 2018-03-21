@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import styled from 'styled-components'
 
 import Movie from './Movie';
-import API_ROOT from './api-config';
+import API_ROOT from '../api-config';
 
 // const url = 'https://api.themoviedb.org/3/discover/movie?api_key=b73ab608261783389bdc277a5b6bf166&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1';
 
