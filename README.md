@@ -1,6 +1,6 @@
 # LUMDB Redux - Level Up Movie Database with Redux
 
-![LUMDB - List View](./docs/lumdb-list.png)
+![LUMDB - List View](./docs/lumdb-redux-list.jpg)
 
 ## Introduction
 
@@ -16,12 +16,15 @@ The app was created while completing the [Redux & React for Everyone](https://ww
 - A modern web app built using React 16 and modern JavaScript (ES2015 and beyond)
 - State management using Redux and React Redux
 - Routing with React Router 4
-- Styled components
-- Fetching API data using React lifecycle events, Async / Await and the Fetch API
+- Styled Components
+- Fetching API data using the Thunk middleware for Redux, Async / Await and the Fetch API
+- Redux logging using the Redux Logger middleware
+- Configured to connect to the Redux DevTools Extension
 - Functional and class components, with markup written in JSX
 - Communication between components using props
 - Transitions using react-overdrive
 - create-react-app for Webpack tooling
+- Project organisation using feature folders
 
 
 ## How to Use
@@ -71,6 +74,7 @@ For more create-react-app commands, see the create-react-app [README](./docs/cre
 - [Redux](https://redux.js.org/)
 - [React Redux](https://github.com/reactjs/react-redux)
 - [Redux DevTools Extension](https://github.com/zalmoxisus/redux-devtools-extension)
+- [Redux Thunk](https://github.com/gaearon/redux-thunk)
 - [Redux Logger](https://github.com/evgenyrodionov/redux-logger)
 - [React Router 4](https://reacttraining.com/react-router/)
 - [React Overdrive](https://github.com/berzniz/react-overdrive)
