@@ -19,6 +19,7 @@ The app was created while completing the [Redux & React for Everyone](https://ww
 - Styled Components
 - Fetching API data using the Thunk middleware for Redux, Async / Await and the Fetch API
 - Redux logging using the Redux Logger middleware
+- Persisting Redux state to localStorage
 - Configured to connect to the Redux DevTools Extension
 - Functional and class components, with markup written in JSX
 - Communication between components using props
@@ -75,6 +76,7 @@ For more create-react-app commands, see the create-react-app [README](./docs/cre
 - [React Redux](https://github.com/reactjs/react-redux)
 - [Redux DevTools Extension](https://github.com/zalmoxisus/redux-devtools-extension)
 - [Redux Thunk](https://github.com/gaearon/redux-thunk)
+- [Redux LocalStorage Simple](https://github.com/kilkelly/redux-localstorage-simple)
 - [Redux Logger](https://github.com/evgenyrodionov/redux-logger)
 - [React Router 4](https://reacttraining.com/react-router/)
 - [React Overdrive](https://github.com/berzniz/react-overdrive)
