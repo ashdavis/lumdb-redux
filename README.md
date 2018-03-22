@@ -11,6 +11,11 @@ This app is based on my [LUMDB project](https://github.com/ashdavis/lumdb), but 
 The app was created while completing the [Redux & React for Everyone](https://www.leveluptutorials.com/tutorials/redux-and-react-for-everyone), a React course by [Level Up Tutorials](https://www.leveluptutorials.com).
 
 
+## Demo
+
+A demo of the app can be found [here](https://lumdb-redux.firebaseapp.com/).
+
+
 ## Project Features
 
 - A modern web app built using React 16 and modern JavaScript (ES2015 and beyond)
