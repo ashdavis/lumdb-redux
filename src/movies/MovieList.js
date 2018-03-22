@@ -38,8 +38,12 @@ const mapDispatchToProps = (dispatch) => bindActionCreators({
 export default connect(mapStateToProps, mapDispatchToProps)(MovieList);
 
 const MovieGrid = styled.div`
+  max-width: 1280px;
+  margin: 0 auto;
   display: grid;
   padding: 0 1rem 1rem 1rem;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(auto-fill, 154px);
+  justify-content: space-around;
   grid-row-gap: 1rem;
+  grid-column-gap: 1rem;
 `;

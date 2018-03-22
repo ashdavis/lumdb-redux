@@ -58,6 +58,7 @@ const MovieWrapper = styled.div`
   padding-top: 50vh;
   background: url(${props => props.backdrop}) no-repeat;
   background-size: cover;
+  background-position: center;
 `;
 
 const MovieInfo = styled.div`
@@ -71,5 +72,18 @@ const MovieInfo = styled.div`
   img {
     position: relative;
     top: -5rem;
+  }
+
+  @media only screen and (max-width: 700px) {
+    flex-flow: column nowrap;
+    padding: 0 2rem 10%;
+    
+    > div {
+      margin-left: 0;
+    }
+
+    img {
+      top: -1.5rem;
+    }
   }
 `;
