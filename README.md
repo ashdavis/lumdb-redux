@@ -64,10 +64,10 @@ npm run build
 ```
 
 Builds the app for production to the `build` folder.<br>
+
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br>
-By default, it also [includes a service worker](./docs/create-react-app-readme.md#making-a-progressive-web-app) so that the app loads from local cache on future visits.
+The build is minified and the filenames include the hashes.
 
 ### More information
 
