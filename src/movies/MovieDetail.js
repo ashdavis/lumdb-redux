@@ -28,7 +28,7 @@ class MovieDetail extends PureComponent {
       <MovieWrapper backdrop={`${BACKDROP_PATH}${movie.backdrop_path}`}>
         <MovieInfo>
           <Overdrive id={movie.id.toString()}>
-            <Poster src={`${POSTER_PATH}${movie.poster_path}`} alt={movie.title}/>
+            <MoviePoster src={`${POSTER_PATH}${movie.poster_path}`} alt={movie.title}/>
           </Overdrive>
             <div>
               <h1>{movie.title}</h1>
@@ -59,6 +59,17 @@ const MovieWrapper = styled.div`
   background: url(${props => props.backdrop}) no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media only screen and (max-width: 700px) {
+    height: 175px;
+    padding-top: 175px;
+  }
+`;
+
+const MoviePoster = Poster.extend`
+  @media only screen and (max-width: 700px) {
+    width: 120px;
+  }
 `;
 
 const MovieInfo = styled.div`
