@@ -7,8 +7,8 @@ import Overdrive from 'react-overdrive';
 import { Poster } from './Movie';
 import { getMovie, resetMovie } from './actions';
 
-const POSTER_PATH = 'http://image.tmdb.org/t/p/w342';
-const BACKDROP_PATH = 'http://image.tmdb.org/t/p/w1280';
+const POSTER_PATH = 'https://image.tmdb.org/t/p/w342';
+const BACKDROP_PATH = 'https://image.tmdb.org/t/p/w1280';
 
 class MovieDetail extends PureComponent {
   componentDidMount() {
