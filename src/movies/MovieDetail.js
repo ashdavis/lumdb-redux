@@ -25,7 +25,8 @@ class MovieDetail extends PureComponent {
     const {movie} = this.props;
     if (!movie.id) return null;
     return (
-      <MovieWrapper backdrop={`${BACKDROP_PATH}${movie.backdrop_path}`}>
+      <div>
+        <MovieBackdrop backdrop={`${BACKDROP_PATH}${movie.backdrop_path}`} />
         <MovieInfo>
           <Overdrive id={movie.id.toString()}>
             <MoviePoster src={`${POSTER_PATH}${movie.poster_path}`} alt={movie.title}/>
@@ -36,7 +37,7 @@ class MovieDetail extends PureComponent {
               <p>{movie.overview}</p>
             </div>
         </MovieInfo>
-      </MovieWrapper>
+      </div>
     );
   }
 }
@@ -53,16 +54,18 @@ const mapDispatchToProps = (dispatch) => bindActionCreators({
 
 export default connect(mapStateToProps, mapDispatchToProps)(MovieDetail);
 
-const MovieWrapper = styled.div`
-  position: relative;
-  padding-top: 50vh;
+const MovieBackdrop = styled.div`
+  height: 50vh;
   background: url(${props => props.backdrop}) no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
 
   @media only screen and (max-width: 700px) {
+    height: 250px;
+  }
+
+  @media only screen and (max-width: 350px) {
     height: 175px;
-    padding-top: 175px;
   }
 `;
 
@@ -88,11 +91,9 @@ const MovieInfo = styled.div`
   @media only screen and (max-width: 700px) {
     flex-flow: column nowrap;
     padding: 0 2rem 10%;
-    
     > div {
       margin-left: 0;
     }
-
     img {
       top: -1.5rem;
     }
